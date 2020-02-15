@@ -12,16 +12,22 @@
         <hr>
         <h2>Single Image Upload</h2>
         <hr>
-        <form action="" method="post" enctype="multipart/form-data">
+        <form action="{{ route('single_image.store') }}" method="post" enctype="multipart/form-data">
             @csrf
             <div>
                 <label for="single_image_title">Single Image Title :</label>
-                <input type="text" name="single_image_title" id="single_image_title">
+                <input type="text" name="single_image_title" id="single_image_title" value="{{ old('single_image_title') }}">
+                @error('single_image_title')
+                    <div style="color: brown">{{ $message }}</div>
+                @enderror
             </div>
             <br>
             <div>
                 <label for="single_image">Single Image Upload :</label>
                 <input type="file" name="single_image" id="single_image">
+                @error('single_image')
+                    <div style="color: brown">{{ $message }}</div>
+                @enderror
             </div>
             <br>
             <button type="submit">Save</button>

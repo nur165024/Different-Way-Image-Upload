@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('single/image/upload','SingleImageController@single_image_create')->name('single_image.create');
+Route::get('single/image/create','SingleImageController@single_image_create')->name('single_image.create');
+Route::post('single/image/store','SingleImageController@single_image_store')->name('single_image.store');
