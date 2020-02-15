@@ -20,3 +20,4 @@ Route::post('single/image/store','SingleImageController@single_image_store')->na
 
 //image intervention route list
 Route::get('intervention/single/image/create','InterventionSingleImageController@intervention_single_image_create')->name('intervention_single_image.create');
+Route::post('intervention/single/image/store','InterventionSingleImageController@intervention_single_image_store')->name('intervention_single_image.store');
