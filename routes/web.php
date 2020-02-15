@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
+// single image route list
 Route::get('single/image/create','SingleImageController@single_image_create')->name('single_image.create');
 Route::post('single/image/store','SingleImageController@single_image_store')->name('single_image.store');
+
+//image intervention route list
+Route::get('intervention/single/image/create','InterventionSingleImageController@intervention_single_image_create')->name('intervention_single_image.create');
