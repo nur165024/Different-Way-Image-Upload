@@ -24,7 +24,7 @@
         <br>
         <div>
             <label for="intervention_multiple_image">Intervention Multiple Image Upload :</label>
-            <input type="file" name="intervention_multiple_image" id="intervention_multiple_image">
+            <input type="file" name="intervention_multiple_image[]" multiple id="intervention_multiple_image">
             @error('intervention_multiple_image')
             <div style="color: brown">{{ $message }}</div>
             @enderror
