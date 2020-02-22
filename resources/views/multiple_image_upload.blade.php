@@ -17,7 +17,7 @@
             <label for="image_title">Single Image Title :</label>
             <input type="text" name="image_title" id="image_title" value="{{ old('image_title') }}">
             @error('image_title')
-            <div style="color: brown">{{ $message }}</div>
+                <div style="color: brown">{{ $message }}</div>
             @enderror
         </div>
         <br>
@@ -25,7 +25,7 @@
             <label for="image">Single Image Upload :</label>
             <input type="file" name="image" id="image">
             @error('image')
-            <div style="color: brown">{{ $message }}</div>
+                <div style="color: brown">{{ $message }}</div>
             @enderror
         </div>
         <br>

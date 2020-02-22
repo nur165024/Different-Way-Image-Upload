@@ -27,3 +27,4 @@ Route::post('intervention/multiple/image/store','InterventionMultipleImageContro
 //multiple folder image upload
 Route::get('multiple/folder/image/create','MultipleFolderImageController@create')->name('multiple.create');
 Route::post('multiple/folder/image/store','MultipleFolderImageController@store')->name('multiple.store');
+
